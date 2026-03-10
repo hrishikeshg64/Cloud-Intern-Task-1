@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cloud Enthusiast</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#020617;
+}
+
+nav h1{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h2{
+    font-size:50px;
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:12px 25px;
+    border:none;
+    background:#38bdf8;
+    color:black;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* About */
+
+.about{
+    padding:80px 60px;
+    text-align:center;
+}
+
+.about h2{
+    color:#38bdf8;
+}
+
+/* Projects */
+
+.projects{
+    padding:80px 60px;
+}
+
+.projects h2{
+    text-align:center;
+    color:#38bdf8;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    width:260px;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#38bdf8;
+}
+
+/* Tools */
+
+.tools{
+    padding:80px 60px;
+    text-align:center;
+}
+
+.tool-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.tool{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* Contact */
+
+.contact{
+    padding:80px 60px;
+    text-align:center;
+}
+
+input, textarea{
+    width:300px;
+    padding:10px;
+    margin:10px;
+}
+
+button.submit{
+    background:#38bdf8;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+<h1>Cloud Enthusiast</h1>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h2>Cloud Enthusiast</h2>
+
+<p>Exploring Cloud Computing, DevOps and Modern Infrastructure</p>
+
+<button onclick="document.getElementById('projects').scrollIntoView()">
+View Projects
+</button>
+
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<p>
+Hi, I'm Rishi Gaikwad — a Cloud and DevOps enthusiast passionate about
+building scalable infrastructure using AWS, Docker, Kubernetes and Terraform.
+</p>
+
+</section>
+
+<!-- Projects -->
+
+<section class="projects" id="projects">
+
+<h2>Cloud Projects</h2>
+
+<div class="project-container">
+
+<div class="card">
+<h3>AWS EC2 Deployment</h3>
+<p>Deployed cloud infrastructure using Amazon EC2 and Linux.</p>
+</div>
+
+<div class="card">
+<h3>Docker Containers</h3>
+<p>Containerized applications using Docker.</p>
+</div>
+
+<div class="card">
+<h3>Kubernetes Cluster</h3>
+<p>Managed container orchestration using Kubernetes.</p>
+</div>
+
+<div class="card">
+<h3>Terraform Infrastructure</h3>
+<p>Provisioned AWS resources automatically using Terraform.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Tools -->
+
+<section class="tools" id="tools">
+
+<h2>DevOps Tools</h2>
+
+<div class="tool-grid">
+
+<div class="tool"><i class="fab fa-aws"></i><p>AWS</p></div>
+<div class="tool"><i class="fab fa-docker"></i><p>Docker</p></div>
+<div class="tool"><p>Kubernetes</p></div>
+<div class="tool"><p>Terraform</p></div>
+<div class="tool"><i class="fab fa-github"></i><p>GitHub</p></div>
+<div class="tool"><p>Linux</p></div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name"><br>
+
+<input type="email" placeholder="Email"><br>
+
+<textarea placeholder="Message"></textarea><br>
+
+<button class="submit">Send</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Cloud Enthusiast | Built by Rishi Gaikwad</p>
+
+</footer>
+
+</body>
+</html>
